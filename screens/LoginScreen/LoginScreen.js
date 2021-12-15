@@ -29,7 +29,9 @@ const LoginScreen = ({navigation}) => {
     }, [])
 
     const signIn = () => {
-
+        // We are passing promises up
+        auth.signInWithEmailAndPassword(email, password)
+            .catch(error => alert(error))
     }
 
     return (
@@ -51,6 +53,7 @@ const LoginScreen = ({navigation}) => {
                 <Input placeholder="Password" secureTextEntry type="password" 
                     value={password}
                     onChangeText={text => setPassword(text)}
+                    onSubmitEditing={signIn}
                 />
                 <View style={styles.buttonContainer}>
                 {/* Outline inverse the style of button */}

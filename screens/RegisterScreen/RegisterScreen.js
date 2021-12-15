@@ -74,8 +74,7 @@ export default function RegisterScreen({navigation}) {
                     raised
                     onPress={register}
                     title="Register"
-                     containerS
-                     tyle={styles.button}
+                     containerStyle={styles.button}
                 />
 
                 {/* Outline inverse the style of button */}
