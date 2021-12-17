@@ -39,7 +39,7 @@ const HomeScreen = ({navigation}) => {
             headerTitleStyle: {color: "black"},
             headerTintColor: "black",
             headerLeft: () => (
-                <View style={{marginLeft: 20}}>
+                <View style={{margin: 10,}}>
                     <TouchableOpacity onPress={signOutUser} activeOpacity={0.5}>
                     {/* ? is used for if user is undefined */}
                     <Avatar rounded source={{uri: auth?.currentUser?.photoURL }} />
@@ -53,7 +53,7 @@ const HomeScreen = ({navigation}) => {
                         flexDirection: "row",
                         justifyContent: "space-between",
                         width :80,
-                        marginRight: 20,
+                        marginRight: 10,
                     }}
                 >
                     <TouchableOpacity activeOpacity={0.5}>
