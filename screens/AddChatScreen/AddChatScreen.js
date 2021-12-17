@@ -38,7 +38,7 @@ export default function AddChatScreen({navigation}) {
                     <Icon name="wechat" type="AntDesign" size={24} color="black" />
                 }
             />
-                <Button onPress={createChat} title="Create new Chat" />
+                <Button disabled={!input} onPress={createChat} title="Create new Chat" />
         </View>
     )
 }
